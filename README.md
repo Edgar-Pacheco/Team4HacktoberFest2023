@@ -8,42 +8,27 @@ There should be one GitHub repository per team. /  Debería haber un repositorio
 
 **Asegúrate de que todos los miembros del equipo hayan completado todos los pasos en el [documento de configuración](setup-espanol.md).**
 
-## Theme of your project / Tema de tu proyecto
+## Tema del Proyecto
 
-1. Extract Transform Load (ETL) pipeline with an analytics component / Pipeline de Extracción, Transformación y Carga (ETL) con un componente analítico
-2. Extract Transform Load (ETL) pipeline with a machine learning (ML) component  / Pipeline de Extracción, Transformación y Carga (ETL) con un componente de aprendizaje automático (ML)
-3. Retrieval Augmented Generation (RAG) pipeline for question answering /  Pipeline de Generación Aumentada por Recuperación (RAG) para responder preguntas
-4. Retrieval Augmented Generation (RAG) pipeline for chatbot /  Pipeline de Generación Aumentada por Recuperación (RAG) para chatbot
+Pipeline de Extracción, Transformación y Carga (ETL) de Proteomas y Caracteristicas Clinicas de casos con Cáncer de Mama diagnosticado, con un componente de aprendizaje automático (ML) para realizar una detección oportuna y brindar las condiciones más adecuadas (medicacion, cuidados, etc.) para el paciente.
 
 ## Description / Descripción 
-
-Provide a description of your project. Include the data sources you are using, the tools you are using, and the expected outcome of your project.
 
 Proporcione una descripción de su proyecto. Incluya las fuentes de datos que está utilizando, las herramientas que está utilizando y el resultado esperado de su proyecto.
 
 ## Data sources / Fuentes de datos
 
-Provide a detailed description of your data sources. Please ensure you work only with open source data. Include a link to the data you are working with. 
+Se utilizaran 2 datasets, provenientes de distintas fuentes.
 
-Agregue una descripción detallada de sus fuentes de datos. Asegúrese de trabajar solo con datos de código abierto. Incluya un enlace a los datos con los que está trabajando.
+DS 1: Breast Cancer Proteomes. Contiene 77 perfiles proteomicos (Expresión de Proteinas) en los casos de cáncer de mama previamente diagnosticados, obtenidos del Clinical Proteomic Tumor Analysis (NCI/NIH), con valores de expresión para ~12,000 proteinas en cada una de las muestras. Licencia Desconocida. (https://www.kaggle.com/datasets/piotrgrabo/breastcancerproteomes)
 
-**Do not upload data to GitHub** / **No suba datos a GitHub**
+DS 2: Breast Cancer Coimbra. Contiene las características clínicas de 64 pacientes con cáncer de mama y 52 controles sanos. Contiene 10 predictores cuantitativos, y una variable dependiente binaria, que indica presencia o ausencia de cáncer de mama. Los modelos de predicción basados en estos predictores, si son precisos, pueden utilizarse potencialmente como biomarcadores del cáncer de mama. Licencia atribuida a Creative Commons Attribution 4.0 International. (https://archive.ics.uci.edu/dataset/451/breast+cancer+coimbra)
 
 ## Methods / Métodos
-
-Describe the methods you are using. Include a description of the tools you are using.
 
 Describa los métodos que está utilizando. Incluya una descripción de las herramientas que está utilizando.
 
 ## User interface your project will have / Interfaz de usuario que tendrá su proyecto
-
-Describe the user interface your project will have. Include a description of the tools you are using.
-
-Options: 
-
-1. FastAPI application
-2. Chainlit application
-3. Voila dashboard
 
 Describa la interfaz de usuario que tendrá su proyecto. Incluya una descripción de las herramientas que está utilizando.
 
@@ -55,6 +40,6 @@ Opciones:
 
 ## Team members/ Miembros del equipo
 
-Add the names and GitHub IDs of your team members here.
-
 Agregue los nombres y las ID de GitHub de los miembros de su equipo aquí.
+
+Jesús Gerardo Ortiz Romero / @j-gorm
