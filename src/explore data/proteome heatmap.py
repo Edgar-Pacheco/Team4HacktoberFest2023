@@ -1,9 +1,20 @@
+#Script para generar un Mapa de Calor de la expresión de los genes en Proteomas de pacientes con Cáncer de Mama
+    #Gráfico clave para visualizar como se realiza la expresión génica en casos positivos a Cáncer de Mama
+
+'''
+pip install numpy
+pip install pandas
+pip install seaborn
+pip install matplotlib
+pip install openpyxl
+'''
+
 import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(r"C:\Users\gerar\Downloads\77_cancer_proteomes_CPTAC_itraq.csv")
+df = pd.read_csv(r"C:\Users\gerar\Downloads\77_cancer_proteomes_CPTAC_itraq.csv") #cambiar el path, esta linkeado a mi PC
 print(df.head(79))
 
 gene = ((np.asarray(df['gene_symbol'])).reshape(110,110))
@@ -33,4 +44,4 @@ ax.set_yticks([])
 ax.axis('off')
 
 sns.heatmap(result,annot=labels,fmt="",cmap='RdYlGn',linewidths=0.10,ax=ax)
-plt.show()
+plt.show() #Error en la formulación del HeatMap, 'unable to allocate 895 MiB'
