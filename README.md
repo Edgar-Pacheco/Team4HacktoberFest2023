@@ -9,7 +9,9 @@ Pipeline de Extracción, Transformación y Carga (ETL) de Proteomas y Caracteris
 Proporcione una descripción de su proyecto. Incluya las fuentes de datos que está utilizando, las herramientas que está utilizando y el resultado esperado de su proyecto.
 
 La idea a desarrollar, es generar una API con integración de ML con datos de Proteomas y Caracteristicas Clinicas de casos de Cáncer de Mama previamente diagnosticado para poder realizar una detección oportuna, para así brindarle al paciente las condiciones mas adecuadas en cuanto a calidad de vida, farmacos, y cuidados, por mencionar algunos, y proporcionarlo a la población que se encuentra inmersa en el tema para darles una mano de ayuda.
+
 Se utilizaran 2 DataSets, los dos con licencias abiertas, uno que contiene Proteomas de 77 pacientes y el otro unicamente con caracteristicas clínicas, incluyendo datos de control negativo para poder discernir y entender los datos de mejor manera.
+
 La API se generara mediante Scripts de Python, para extracción automatizada, generación de graficos para exploración de los datos, y las PipeLines necesarias, con la utilización de DuckDB para subir la información a una DB, y SeaBorn para la generación de HeatMaps.
 
 ## Fuentes de datos
@@ -27,7 +29,7 @@ Describa los métodos que está utilizando. Incluya una descripción de las herr
 Para analizar los datos, proponemos lo siguiente:
 * Realizar una visualización general de los 2 DataSets seleccionados de forma generalizada, mostrando la MetaData (ubicación de recolección de los datos, fecha, cantidad de datos, clasificaciones, etc.)
 * En lo correspondiente al DataSet de los Proteomas, generar un HeatMap en el cual se pueda visualizar los niveles de expresión de los genes de forma sencilla y fácil de entender, con su respectiva explicación de puntos clave.
-    *Se utilizara la paqueteria SeaBorn para generar el HeatMap.
+    * Se utilizara la paqueteria SeaBorn para generar el HeatMap.
 * En lo correspondiente al DataSet de las Caracteristicas Clinicas, generar tablas donde se organicen de forma clara y entendible los datos que se presentan.
 
 ## Interfaz de usuario que tendrá su proyecto
@@ -36,6 +38,6 @@ Sera una Aplicación FastAPI.
 
 ## Miembros del equipo
 
-Jesús Gerardo Ortiz Romero / [@j-gorm](https://github.com/j-gorm)
-Edgar Pacheco Castan / [@Edgar-Pacheco](https://github.com/Edgar-Pacheco)
-Diego Peñaloza / [@diegopenaloza](https://github.com/diegopenaloza)
+* Jesús Gerardo Ortiz Romero / [@j-gorm](https://github.com/j-gorm)
+* Edgar Pacheco Castan / [@Edgar-Pacheco](https://github.com/Edgar-Pacheco)
+* Diego Peñaloza / [@diegopenaloza](https://github.com/diegopenaloza)
