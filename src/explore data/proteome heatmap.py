@@ -13,35 +13,19 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import duckdb
 
-df = pd.read_csv(r"C:\Users\gerar\Downloads\77_cancer_proteomes_CPTAC_itraq.csv") #cambiar el path, esta linkeado a mi PC
-print(df.head(79))
+def save_to_duckdb(df, table_name, db_path):
+    """Save dataframe to duckdb"""
+    conn = duckdb.connect(db_path)
+    conn.register('df', df)
+    
+    # Check if table already exists, if not, create it
+    tables = conn.execute("SHOW TABLES").fetchall()
+    if table_name not in [table[0] for table in tables]:
+        conn.execute(f"CREATE TABLE {table_name} AS SELECT * FROM df")
+    
+    conn.close()
 
-gene = ((np.asarray(df['gene_symbol'])).reshape(110,110))
-expression = ((np.asarray(df['AO-A12D.01TCGA'])).reshape(110,110))
-print(gene)
-print(expression)
-
-result = df.pivot(index='RefSeq_accession_number', columns='gene_symbol', values='AO-A12D.01TCGA')
-print(result)
-
-labels = (np.asarray(["{0} \n {1:.2f}".format(symb,value)
-                      for symb, value in zip(gene.flatten(),
-                                               expression.flatten())])
-         ).reshape(110,110)
-
-fig, ax = plt.subplots(figsize=(13,7))
-
-title = "Breast Cancer Proteome Heat Map"
-
-plt.title(title,fontsize=18)
-ttl = ax.title
-ttl.set_position([0.5,1.05])
-
-ax.set_xticks([])
-ax.set_yticks([])
-
-ax.axis('off')
-
-sns.heatmap(result,annot=labels,fmt="",cmap='RdYlGn',linewidths=0.10,ax=ax)
-plt.show() #Error en la formulación del HeatMap, 'unable to allocate 895 MiB'
+df = pd.read_csv("C:/Users/gerar/Downloads/Breast Cancer Proteomes/77_cancer_proteomes_CPTAC_itraq.csv") 
+save_to_duckdb(df, "Cancer_Proteomes", "Proteomes.duckdb")
