@@ -12,8 +12,8 @@ pip install openpyxl
 import numpy as np
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
 import duckdb
+from matplotlib import pyplot as plt
 
 def save_to_duckdb(df, table_name, db_path):
     """Save dataframe to duckdb"""
