@@ -12,3 +12,4 @@ pandas==2.1.1
 seaborn==0.13.0
 virtualenv==20.24.5
 voila==0.5.4
+kaggle
