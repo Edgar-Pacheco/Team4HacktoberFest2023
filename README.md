@@ -2,7 +2,7 @@
 
 ## Theme
 
-<img align="right" width="405" height="289" src="https://static.vecteezy.com/system/resources/previews/023/485/558/original/breast-cancer-pink-ribbon-png.png">Generation of a <strong>report</strong> with <strong>proteomic profile data</strong>, i.e., <strong>protein expression</strong>, of <strong>77 patients diagnosed with <em>breast cancer</em></strong>, for a better understanding of how gene expression behaves in positive cases and to detect possible <strong>new molecular markers</strong> for <em>early</em> and <em>timely</em> detection, through Voila Dashboards.
+<img align="right" width="215" height="373" src="https://static.vecteezy.com/system/resources/previews/023/485/558/original/breast-cancer-pink-ribbon-png.png">Generation of a <strong>report</strong> with <strong>proteomic profile data</strong>, i.e., <strong>protein expression</strong>, of <strong>77 patients diagnosed with <em>breast cancer</em></strong>, for a better understanding of how gene expression behaves in positive cases and to detect possible <strong>new molecular markers</strong> for <em>early</em> and <em>timely</em> detection, through Voila Dashboards.
 
 ## Description 
 
