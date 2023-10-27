@@ -34,5 +34,5 @@ The final idea is to **deploy** the report through **Voila Dashboards**, to show
 * __Diego Peñaloza / [@diegopenaloza](https://github.com/diegopenaloza)__
 
 ## Final Product
-<img align="right" width="405" height="289" src="https://github.com/ploomber/ploomber/blob/master/_static/logo.png?raw=true">Here is our <a href="https://github.com/ploomber/ploomber"><strong>final product!</strong></a>
+<img align="right" width="405" height="289" src="https://github.com/ploomber/ploomber/blob/master/_static/logo.png?raw=true">Here is our <a href="https://silent-mouse-0958.ploomberapp.io"><strong>final product!</strong></a>
 Thanks a lot to <a href="https://github.com/ploomber/ploomber"><strong>Ploomber</strong></a> team and their mentoring programs, thanks to them we were able to deploy the reports online!
